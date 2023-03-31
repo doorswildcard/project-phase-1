@@ -6,17 +6,23 @@ let resultsPage = document.querySelector("#results-page")
 let controls = document.querySelector(".controls")
 let button = document.querySelector("#start")
 
-fetch('http://localhost:3000/trivia')
+const apiUrl = 'http://localhost:3000/trivia'
+let questions = []
+
+fetch(apiUrl)
     .then((res) => res.json())
-    .then((data) => console.log(data))
+      .then((questions))
+
+
+
 
 
 button.addEventListener('click', () =>
-stateTwo()
+startTriviaState()
 )
 
-
 loadInState()
+
 function loadInState(){
     questionContainer.style.display = 'none'
     answerDiv.style.display = 'none'
@@ -24,15 +30,15 @@ function loadInState(){
     resultsPage.style.display = 'none'
     controls.style.display = 'none'
 
-
 }
 
-function stateTwo(){
+function startTriviaState(){
     initpage.style.display = 'none'
     questionContainer.style.display = 'block'
     answerDiv.style.display = 'block'
     answerbuttons.style.display = 'block'
 }
+
 function stateThree(){
 
 }

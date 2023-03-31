@@ -21,7 +21,9 @@ button.addEventListener('click', () =>
 startTriviaState()
 )
 
-loadInState()
+resultsState()
+
+//change correct answer to green
 
 function loadInState(){
     questionContainer.style.display = 'none'
@@ -37,8 +39,18 @@ function startTriviaState(){
     questionContainer.style.display = 'block'
     answerDiv.style.display = 'block'
     answerbuttons.style.display = 'block'
+
 }
 
-function stateThree(){
 
+function resultsState(){
+    questionContainer.style.display = 'none'
+    answerDiv.style.display = 'none'
+    answerbuttons.style.display = 'none'
+    controls.style.display = 'none'
+
+    questionContainer.style.display = 'none'
+    answerDiv.style.display = 'none'
+    answerbuttons.style.display = 'none'
+    resultsPage.style.display = 'block'
 }

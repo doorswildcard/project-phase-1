@@ -1,0 +1,13 @@
+html{
+    animation: fade-in 5s forwards;
+}
+#whole-page{
+    animation: fade-in 5s forwards;
+}
+@keyframes fade-in {
+    from {
+        background-color: black;
+    } to {
+        background-color: whitesmoke;
+    }
+}

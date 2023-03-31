@@ -1,8 +1,5 @@
 html{
-    animation: fade-in 5s forwards;
-}
-#whole-page{
-    animation: fade-in 5s forwards;
+    animation: fade-in 1s forwards;
 }
 @keyframes fade-in {
     from {
@@ -10,4 +7,18 @@ html{
     } to {
         background-color: whitesmoke;
     }
+}
+#initial-page{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 40%;
+    left: 40%;
+}
+#answerbuttons{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 40%;
+    left: 40%;
 }

@@ -1,131 +1,44 @@
-{
-    "trivia": [{
-        "question1" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-
-        "question2": [{
-            "id":2,
-            "question": "Who's the founder of Nike?",
-            "answers": {
-                "firstA": "Elon Musk",
-                "secondA": "Jeff Bezos",
-                "thirdA": "Tyrone from the Block",
-                "fourthA": "Phil Knight"
+    {
+        "trivia": [
+            {
+            "question1": {
+                "id":1,
+                "question": "Are you racist",
+                "answers": {
+                    "first": "yes",
+                    "second": "definitely",
+                    "third": "100%",
+                    "fourth": "closeted racist",
+                    "correct": "closted racist"
+                }
             }
-        }],
-        "question3" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question4" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question5" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question6" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question7" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question8" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question9" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question10" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question11" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }]
+            },
+            {
+            "question2": {
+                "id":2,
+                "question": "Are you homophobic",
+                "answers": {
+                    "first": "yes",
+                    "second": "most surely",
+                    "third": "1000%",
+                    "fourth": "openly homophobic",
+                    "correct": "1000%"
+                }
+            }
+            },
+            {
+            "question3": {
+                "id":2,
+                "question": "Are you homophobic",
+                "answers": {
+                    "first": "yes",
+                    "second": "yes",
+                    "third": "yes",
+                    "fourth": "yes",
+                    "correct": "yes"
+                    }
+                }
+                }
 
-
-
-
-
-
-    }]
-}
+        ]
+    }

@@ -1,44 +1,459 @@
     {
         "trivia": [
             {
-            "question1": {
-                "id":1,
-                "question": "Are you racist",
-                "answers": {
-                    "first": "yes",
-                    "second": "definitely",
-                    "third": "100%",
-                    "fourth": "closeted racist",
-                    "correct": "closted racist"
-                }
-            }
-            },
-            {
-            "question2": {
-                "id":2,
-                "question": "Are you homophobic",
-                "answers": {
-                    "first": "yes",
-                    "second": "most surely",
-                    "third": "1000%",
-                    "fourth": "openly homophobic",
-                    "correct": "1000%"
-                }
-            }
-            },
-            {
-            "question3": {
-                "id":2,
-                "question": "Are you homophobic",
-                "answers": {
-                    "first": "yes",
-                    "second": "yes",
-                    "third": "yes",
-                    "fourth": "yes",
-                    "correct": "yes"
+                "question1": {
+                    "id": 1,
+                    "question": "Who is the founder of Nike?",
+                    "answers": {
+                        "first": "Tyrone Davis",
+                        "second": "Phil Knight",
+                        "third": "LeBron James",
+                        "fourth": "Jeff Bezos",
+                        "correct": "Phil Knight"
                     }
                 }
+            },
+            {
+                "question2": {
+                    "id": 2,
+                    "question": "Which president read a video game ad that said ; \"Kill your friends, Guilt Free\"",
+                    "answers": {
+                        "first": "OOOOOBAMA",
+                        "second": "Sleepy Joe",
+                        "third": "McDonald Trump",
+                        "fourth": "Hill Bill-y Clinton",
+                        "correct": "Hill Bill-y Clinton"
+                    }
                 }
-
+            },
+            {
+                "question3": {
+                    "id": 3,
+                    "question": "What's the highest number an IP address can go ?",
+                    "answers": {
+                        "first": "255",
+                        "second": "254",
+                        "third": "256",
+                        "fourth": "245",
+                        "correct": "255"
+                    }
+                }
+            },
+            {
+                "question4": {
+                    "id": 4,
+                    "question": "How many pokemon were in the first generation ?",
+                    "answers": {
+                        "first": "148",
+                        "second": "149",
+                        "third": "150",
+                        "fourth": "151",
+                        "correct": "151"
+                    }
+                }
+            },
+            {
+                "question5": {
+                    "id": 5,
+                    "question": "What month was Julius Caesar stabbed in ?",
+                    "answers": {
+                        "first": "March",
+                        "second": "December",
+                        "third": "June",
+                        "fourth": "September",
+                        "correct": "March"
+                    }
+                }
+            },
+            {
+                "question6": {
+                    "id": 6,
+                    "question": "How many time zones are in Russia?",
+                    "answers": {
+                        "first": "4",
+                        "second": "1",
+                        "third": "11",
+                        "fourth": "6",
+                        "correct": "11"
+                    }
+                }
+            },
+            {
+                "question7": {
+                    "id": 7,
+                    "question": "How long is an Olympic swimming pool in meters ?",
+                    "answers": {
+                        "first": "45",
+                        "second": "40",
+                        "third": "75",
+                        "fourth": "50",
+                        "correct": "50"
+                    }
+                }
+            },
+            {
+                "question8": {
+                    "id": 8,
+                    "question": "How many wisdom teeth does the average adult have ?",
+                    "answers": {
+                        "first": "1",
+                        "second": "2",
+                        "third": "3",
+                        "fourth": "4",
+                        "correct": "4"
+                    }
+                }
+            },
+            {
+                "question9": {
+                    "id": 9,
+                    "question": "In Georgia, it’s illegal to eat what with a fork?",
+                    "answers": {
+                        "first": "Pizza",
+                        "second": "Fried Chicken",
+                        "third": "Sandwiches",
+                        "fourth": "Tacos",
+                        "correct": "Fried Chicken"
+                    }
+                }
+            },
+            {
+                "question10": {
+                    "id": 10,
+                    "question": "What was Marilyn Monroe’s natural hair color?",
+                    "answers": {
+                        "first": "Red",
+                        "second": "Brown",
+                        "third": "Blonde",
+                        "fourth": "Black",
+                        "correct": "Red"
+                    }
+                }
+            },
+            {
+                "question11": {
+                    "id": 11,
+                    "question": "What's the highest number an IP address can go ?",
+                    "answers": {
+                        "first": "255",
+                        "second": "254",
+                        "third": "256",
+                        "fourth": "245",
+                        "correct": "255"
+                    }
+                }
+            },
+            {
+                "question12": {
+                    "id": 12,
+                    "question": "In June in Wyoming, it is illegal to take a picture of what?",
+                    "answers": {
+                        "first": "Rabbits",
+                        "second": "Ducks",
+                        "third": "Deers",
+                        "fourth": "Foxes",
+                        "correct": "Rabbits"
+                    }
+                }
+            },
+            {
+                "question13": {
+                    "id": 13,
+                    "question": "According to Russian law, a homeless person must be where after 10 pm?",
+                    "answers": {
+                        "first": "Homeless Shelter",
+                        "second": "Home",
+                        "third": "Police Station",
+                        "fourth": "In your walls",
+                        "correct": "Home"
+                    }
+                }
+            },
+            {
+                "question14": {
+                    "id": 14,
+                    "question": "On Sunday, what is illegal to sell in Columbus, Ohio?",
+                    "answers": {
+                        "first": "Mushrooms",
+                        "second": "Toothpaste",
+                        "third": "Cornflakes",
+                        "fourth": "Pepsi",
+                        "correct": "Cornflakes"
+                    }
+                }
+            },
+            {
+                "question15": {
+                    "id": 15,
+                    "question": "What ailment kills the most fruit flies?",
+                    "answers": {
+                        "first": "Sneezes",
+                        "second": "Coughs",
+                        "third": "Constipation",
+                        "fourth": "Pink Eyes",
+                        "correct": "Constipation"
+                    }
+                }
+            },
+            {
+                "question16": {
+                    "id": 16,
+                    "question": "What was the first fruit that was eaten on the moon?",
+                    "answers": {
+                        "first": "Peach",
+                        "second": "Orange",
+                        "third": "Banana",
+                        "fourth": "Strawberry",
+                        "correct": "Peach"
+                    }
+                }
+            },
+            {
+                "question17": {
+                    "id": 17,
+                    "question": "Where was the world’s first speeding ticket issued?",
+                    "answers": {
+                        "first": "England",
+                        "second": "America",
+                        "third": "Canada",
+                        "fourth": "Mexico",
+                        "correct": "England"
+                    }
+                }
+            },
+            {
+                "question18": {
+                    "id": 18,
+                    "question": "What color are airplane \"black\" boxes ?",
+                    "answers": {
+                        "first": "Black",
+                        "second": "Yellow",
+                        "third": "Orange",
+                        "fourth": "Red",
+                        "correct": "Orange"
+                    }
+                }
+            },
+            {
+                "question19": {
+                    "id": 19,
+                    "question": "What was Bugs Bunny original name ?",
+                    "answers": {
+                        "first": "Sly Rabbit",
+                        "second": "Tall Rabbit",
+                        "third": "Chungus Rabbit",
+                        "fourth": "Happy Rabbit",
+                        "correct": "Happy Rabbit"
+                    }
+                }
+            },
+            {
+                "question20": {
+                    "id": 20,
+                    "question": "How many planets are in our solar system ?",
+                    "answers": {
+                        "first": "Eight",
+                        "second": "Ten",
+                        "third": "Nine",
+                        "fourth": "Eleven",
+                        "correct": "Eight"
+                    }
+                }
+            },
+            {
+                "question21": {
+                    "id": 21,
+                    "question": "What year was Flatiron School founded ?",
+                    "answers": {
+                        "first": "2012",
+                        "second": "2010",
+                        "third": "2011",
+                        "fourth": "2013",
+                        "correct": "2012"
+                    }
+                }
+            },
+            {
+                "question22": {
+                    "id": 22,
+                    "question": "How many months have 28 days in them ?",
+                    "answers": {
+                        "first": "1",
+                        "second": "4",
+                        "third": "9",
+                        "fourth": "12",
+                        "correct": "12"
+                    }
+                }
+            },
+            {
+                "question23": {
+                    "id": 23,
+                    "question": "From which country do French fries originate?",
+                    "answers": {
+                        "first": "America",
+                        "second": "Belgium",
+                        "third": "England",
+                        "fourth": "Scotland",
+                        "correct": "Belgium"
+                    }
+                }
+            },
+            {
+                "question24": {
+                    "id": 24,
+                    "question": "What was the name of the Greek God of Death ?",
+                    "answers": {
+                        "first": "Nyx",
+                        "second": "Hypnos",
+                        "third": "Thanatos",
+                        "fourth": "Erebus",
+                        "correct": "Thanatos"
+                    }
+                }
+            },
+            {
+                "question25": {
+                    "id": 25,
+                    "question": "What with no brim ?",
+                    "answers": {
+                        "first": "Yankee",
+                        "second": "Mets",
+                        "third": "Knicks",
+                        "fourth": "Hat",
+                        "correct": "Yankee"
+                    }
+                }
+            },
+            {
+                "question26": {
+                    "id": 26,
+                    "question": "What is the Backstreet Boys biggest hit?",
+                    "answers": {
+                        "first": "I Want It That Way",
+                        "second": "Shape Of My Heart",
+                        "third": "Quit Playing Games",
+                        "fourth": "Incomplete",
+                        "correct": "Shape Of My Heart"
+                    }
+                }
+            },
+            {
+                "question27": {
+                    "id": 27,
+                    "question": "What's the longest river in the world ?",
+                    "answers": {
+                        "first": "Mississippi",
+                        "second": "Amazon",
+                        "third": "Nile",
+                        "fourth": "Ganges",
+                        "correct": "Nile"
+                    }
+                }
+            },
+            {
+                "question28": {
+                    "id": 28,
+                    "question": "In what year was the first iPhone released ?",
+                    "answers": {
+                        "first": "2007",
+                        "second": "2006",
+                        "third": "2005",
+                        "fourth": "2008",
+                        "correct": "2007"
+                    }
+                }
+            },
+            {
+                "question29": {
+                    "id": 29,
+                    "question": "Which city is Eminem from?",
+                    "answers": {
+                        "first": "New York City",
+                        "second": "Detroit",
+                        "third": "San Francisco",
+                        "fourth": "Las Vegas",
+                        "correct": "Detroit"
+                    }
+                }
+            },
+            {
+                "question30": {
+                    "id": 30,
+                    "question": "Which NYC borough is the most populated ?",
+                    "answers": {
+                        "first": "Manhattan",
+                        "second": "Queens",
+                        "third": "Bronx",
+                        "fourth": "Brooklyn",
+                        "correct": "Brooklyn"
+                    }
+                }
+            },
+            {
+                "question31": {
+                    "id": 31,
+                    "question": "What was Elvis Presley's middle name?",
+                    "answers": {
+                        "first": "Michael",
+                        "second": "Fred",
+                        "third": "Aaron",
+                        "fourth": "Jason",
+                        "correct": "Aaron"
+                    }
+                }
+            },
+            {
+                "question32": {
+                    "id": 32,
+                    "question": "Who was the lead singer of the band Queen?",
+                    "answers": {
+                        "first": "Freddie Mercury",
+                        "second": "Brian May",
+                        "third": "Roger Taylor",
+                        "fourth": "Mike Grose",
+                        "correct": "Freddie Mercury"
+                    }
+                }
+            },
+            {
+                "question33": {
+                    "id": 33,
+                    "question": "Which song earned Drake his first Grammy Award?",
+                    "answers": {
+                        "first": "God's Plan",
+                        "second": "Hotline Bling",
+                        "third": "One Dance",
+                        "fourth": "Passionfruit",
+                        "correct": "Hotline Bling"
+                    }
+                }
+            },
+            {
+                "question34": {
+                    "id": 34,
+                    "question": "Which method is used to add a new element to an array in JavaScript?",
+                    "answers": {
+                        "first": "add()",
+                        "second": "shift()",
+                        "third": "append()",
+                        "fourth": "push()",
+                        "correct": "push()"
+                    }
+                }
+            },
+            {
+                "question35": {
+                    "id": 35,
+                    "question": "How many cards are in a NORMAL UNO deck ?",
+                    "answers": {
+                        "first": "104",
+                        "second": "116",
+                        "third": "108",
+                        "fourth": "112",
+                        "correct": "108"
+                    }
+                }
+            }
         ]
     }

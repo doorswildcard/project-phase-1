@@ -9,6 +9,9 @@ let button = document.querySelector("#start")
 const apiUrl = 'http://localhost:3000/trivia'
 let questionsA = []
 let questionsB = []
+let triviaMode = 1          //Choose between next question on answer click or show answer wrong then next question
+let freshOrNot = false
+let buttonArray = Array.from(answerbuttons.children) //make the children of the answerbuttons into an array
 
 let questionAt = 0;
 
@@ -25,7 +28,7 @@ fetch(apiUrl)
 
 button.addEventListener('click', () =>
 
-resultsState()
+startTriviaState()
 
 )
 
@@ -49,6 +52,7 @@ function startTriviaState(){
     answerbuttons.style.display = 'block'
     randomizeArray()
     setTheQuestion()
+    setTheButtons(buttonArray)
 }
 
 function resultsState(){
@@ -59,7 +63,7 @@ function resultsState(){
     resultsPage.style.display = 'block'
 
     resultsPage.addEventListener('click', () =>{
-        startTriviaState()
+
                        //CLICK THE FAIL WHEN YOU SEE ME TEXT
     })
 }
@@ -75,7 +79,7 @@ function randomizeArray(){
     for (let index = 0; index < 10; index++) {    /// Sets up an array of random numbers
         numberArray.push(randomNumber())            /// gives numberArray a new number each iteration
     }
-    console.log(`FIRST ARRAY: ${numberArray}`)            //proof that it works
+    console.log(`FIRST ARRAY: ${numberArray}`)            //proof that it works+ sanity purposes
     for (let index = 0; index <= numberArray.length; index++) {
         for (let DupeCheck = 0; DupeCheck <= numberArray.length ;DupeCheck++) {   ///looping through the array for any dupes
             while(numberArray[index] == numberArray[DupeCheck] && index != DupeCheck){ //if 2 numbers are the same and both checks arent the same..
@@ -83,38 +87,51 @@ function randomizeArray(){
                 console.log('Had to change a number')           //for sanity purposes
             }
         }
-
     }
-    console.log(`SECOND ARRAY: ${numberArray}`)
+    console.log(`SECOND ARRAY: ${numberArray}`)         //for sanity purposes
 
     for (let index = 0; index < numberArray.length ; index++) {
         questionsB.push(questionsA[numberArray[index]])
     }
-    console.log(questionsB)
+    console.log(questionsB)         //for sanity purposes
 }
 
 function setTheQuestion(){ //This is a lot to digest so take it slow.
-
+    if(questionsB != [] && questionAt == questionsB.length){return resultsState()} else { }
     questionContainer.textContent = questionsB[questionAt].question //Currently sets the first question from the array, will change later
 
-    let buttonArray = Array.from(answerbuttons.children) //make the children of the answerbuttons into an array
+
     let answers = questionsB[questionAt].answers //make the answers from the question into an object
 
     Object.keys(answers).forEach((key, aIndex) => { //get the answer object and loop through it and give it the key and index as the parameter
-
-        buttonArray.forEach(function(button){ // now we're looping through the buttonarray
-            button.addEventListener('mouseenter', () => { //Hover over the button listener event
-                button.style.backgroundColor = 'grey'
-            })
-            button.addEventListener('mouseleave', () =>{ //You stopped hovering
-                button.style.backgroundColor = ''
-            })
+        buttonArray.forEach(function(button){   //looping through the buttons
             if(button.id.slice(1) == aIndex+1){ //if the second character of the button is equal to answerIndex +1
             button.textContent = answers[key]   //set the textcontent to the button currently being iterated through
-            } else {
-                //just blank space atm might do something with it
-            }
-           console.log(button.textContent)  //for sanity purposes
+            } else { /*just blank space at the moment might do something with it*/  }
         })
     })
+
+
+}
+
+function setTheButtons(buttons){
+
+    buttons.forEach(function(button){ // now we're looping through the buttonarray
+        button.addEventListener('mouseenter', () => { //Hover over the button listener event
+            button.style.backgroundColor = 'grey'
+        })
+        button.addEventListener('mouseleave', () =>{ //You stopped hovering
+            button.style.backgroundColor = ''
+        })
+        button.addEventListener('click', () => {
+            if(button.textContent == questionsB[questionAt].answers['correct']){
+                console.log("Correct Answer, Here's a cookie")
+                return setTheQuestion(questionAt++)
+            } else if (button.textContent != questionsB[questionAt].answers['correct']){
+                console.log("Wrong answer, punishment: The Gas Chambers...")
+               return  setTheQuestion(questionAt++)
+            }
+        })
+    })
+
 }

@@ -48,9 +48,8 @@ function startTriviaState(){
     answerDiv.style.display = 'block'
     answerbuttons.style.display = 'block'
     randomizeArray()
-   // setTheQuestion()
+    setTheQuestion()
 }
-
 
 function resultsState(){
     initpage.style.display = 'none'
@@ -79,7 +78,7 @@ function randomizeArray(){
     console.log(`FIRST ARRAY: ${numberArray}`)            //proof that it works
     for (let index = 0; index <= numberArray.length; index++) {
         for (let DupeCheck = 0; DupeCheck <= numberArray.length ;DupeCheck++) {   ///looping through the array for any dupes
-            while(numberArray[index] == numberArray[DupeCheck] && index != DupeCheck){ //if 2 numbers are the same..
+            while(numberArray[index] == numberArray[DupeCheck] && index != DupeCheck){ //if 2 numbers are the same and both checks arent the same..
                 numberArray[index] = randomNumber()       // give the latest number a new number
                 console.log('Had to change a number')           //for sanity purposes
             }
@@ -90,10 +89,8 @@ function randomizeArray(){
 
     for (let index = 0; index < numberArray.length ; index++) {
         questionsB.push(questionsA[numberArray[index]])
-
     }
     console.log(questionsB)
-
 }
 
 function setTheQuestion(){ //This is a lot to digest so take it slow.

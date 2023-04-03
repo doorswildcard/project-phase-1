@@ -18,13 +18,15 @@ let playerScore = 0     //player score
 
 let questionAt = 0;     //where in the trivia are you
 
-{ fetch(apiUrl)
+ fetch(apiUrl)
     .then((res) => res.json())
       .then((data) => {
         data.forEach(function(questionObject){
             originalTriviaArray.push(Object.values(questionObject)[0])
         })
-      }).finally(console.log('succesfully loaded')) }
+      }).finally(console.log('succesfully loaded'))
+console.log(originalTriviaArray)
+
 button.addEventListener('click', () =>
 startTriviaState()
 )
@@ -86,50 +88,52 @@ function resultsState(){                //when you finish the trivia
     resultsPage.textContent = result()  // insults u again???
 }
 
-let randomNumber = () => {
+let randomNumber = (passedInArray) => {
     min = 0
-    max = originalTriviaArray.length - 1
+    max = passedInArray.length - 1
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function randomizeArray(){
-    miniTriviaArray = [];   //should empty array questions
-    console.log(randomNumber())     //sanity purposes
-    let numberArray = [];
-    for (let index = 0; index < 10; index++) {    /// Sets up an array of random numbers
-        numberArray.push(randomNumber())            /// gives numberArray a new number each iteration
-    }
-    console.log(`FIRST ARRAY: ${numberArray}`)            //proof that it works+ sanity purposes
-    for (let index = 0; index <= numberArray.length; index++) {
-        for (let DupeCheck = 0; DupeCheck <= numberArray.length ;DupeCheck++) {   ///looping through the array for any dupes
-            while(numberArray[index] == numberArray[DupeCheck] && index != DupeCheck){ //if 2 numbers are the same and both checks arent the same..
-                numberArray[index] = randomNumber()       // give the latest number a new number
-                console.log('Had to change a number')           //for sanity purposes
-                for (let lastCheck = 0; lastCheck <= numberArray.length; lastCheck++) {
-                    while(numberArray[DupeCheck] == numberArray[lastCheck] && lastCheck != DupeCheck){
-                        numberArray[DupeCheck] = randomNumber()
-                        console.log('Hit the 3rd layer')
-                    }
-                }
-            }
-        }
-    }
-    console.log(`SECOND ARRAY: ${numberArray}`)         //for sanity purposes
 
-    for (let index = 0; index < numberArray.length ; index++) {
-        miniTriviaArray.push(originalTriviaArray[numberArray[index]])
-    }
-    console.log(miniTriviaArray)         //for sanity purposes
+function randomizeArray(){
+        let minute = []
+        for (let index = 0; index < originalTriviaArray.length; index++) {
+            minute.push(index)
+
+        }
+        while(minute.length > 10){
+        minute.splice(minute[randomNumber(minute)], 1)
+        }
+        minute = shuffle(minute)
+        console.log(minute)
+        miniTriviaArray = minute
+
 }
+
+function shuffle(ShuffleThis){
+    let nowIndex = ShuffleThis.length,  randomIndex;
+    // While there remain elements to shuffle.
+    while (nowIndex != 0) {
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * nowIndex);
+      nowIndex--;
+      // And swap it with the current element.
+      [ShuffleThis[nowIndex], ShuffleThis[randomIndex]] = [
+        ShuffleThis[randomIndex], ShuffleThis[nowIndex]];
+    }
+    return ShuffleThis
+}
+
+
 
 function setTheQuestion(){ //This is a lot to digest so take it slow.
     if(miniTriviaArray != [] && questionAt == miniTriviaArray.length){return resultsState()} else { } //if at the last index go to results
-    questionImage.src = miniTriviaArray[questionAt].image
+    questionImage.src = originalTriviaArray[miniTriviaArray[questionAt]].image
     questionImage.width = 800   //sets image width to 800**
     questionImage.height = 600  //sets image height to 600**
-    questionContainer.textContent = miniTriviaArray[questionAt].question //Currently sets the first question from the array, will change later
-    let answers = miniTriviaArray[questionAt].answers //make the answers from the question into an object
-
+    questionContainer.textContent = originalTriviaArray[miniTriviaArray[questionAt]].question //Currently sets the first question from the array, will change later
+    let answers = originalTriviaArray[miniTriviaArray[questionAt]].answers //make the answers from the question into an object
+    console.log(answers)
     Object.keys(answers).forEach((key, aIndex) => { //get the answer object and loop through it and give it the key and index as the parameter
         buttonArray.forEach(function(button){   //looping through the buttons
             if(button.id.slice(1) == aIndex+1){ //if the second character of the button is equal to answerIndex +1
@@ -149,14 +153,17 @@ function setTheButtons(buttons){
             button.style.backgroundColor = ''
         })
         button.addEventListener('click', function test() {
-            if(button.textContent == miniTriviaArray[questionAt].answers['correct']){ //checking if the right answer
+            if(button.textContent == originalTriviaArray[miniTriviaArray[questionAt]].answers['correct']){ //checking if the right answer
                 playerScore++;
                 console.log("Correct Answer, Here's a cookie")
                 return setTheQuestion(questionAt++)
-            } else if (button.textContent != miniTriviaArray[questionAt].answers['correct']){ //checking if the wrong answer
+            } else if (button.textContent != originalTriviaArray[miniTriviaArray[questionAt]].answers['correct']){ //checking if the wrong answer
                 console.log("Wrong answer, punishment: The Gas Chambers...")
                return  setTheQuestion(questionAt++)
             }
         })
     })
 }
+
+
+// function testing(){

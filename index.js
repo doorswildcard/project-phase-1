@@ -25,14 +25,9 @@ let questionAt = 0;     //where in the trivia are you
             originalTriviaArray.push(Object.values(questionObject)[0])
         })
       }).finally(console.log('succesfully loaded')) }
-
-
 button.addEventListener('click', () =>
-
 startTriviaState()
-
 )
-
 restartButton.addEventListener('click', () => {
     startTriviaState()
     console.log("HELLO")
@@ -52,11 +47,9 @@ function loadInState(){                 //when the page loads in
     questionImage.style.display = 'none'
     button.style.display = 'block'
     initpage.style.display = 'block'
-
 }
 
 function startTriviaState(){            //starts the trivia hides necessary elements
-
     initpage.style.display = 'none'
     questionContainer.style.display = 'block'
     questionImage.style.display = 'block'   //none = go invisible
@@ -91,11 +84,7 @@ function resultsState(){                //when you finish the trivia
         }
     }           // insults for how well you did
     resultsPage.textContent = result()  // insults u again???
-
-
-
 }
-
 
 let randomNumber = () => {
     min = 0
@@ -136,8 +125,8 @@ function randomizeArray(){
 function setTheQuestion(){ //This is a lot to digest so take it slow.
     if(miniTriviaArray != [] && questionAt == miniTriviaArray.length){return resultsState()} else { } //if at the last index go to results
     questionImage.src = miniTriviaArray[questionAt].image
-    questionImage.width = 800   //sets image width to 800
-    questionImage.height = 600  //sets image height to 600
+    questionImage.width = 800   //sets image width to 800**
+    questionImage.height = 600  //sets image height to 600**
     questionContainer.textContent = miniTriviaArray[questionAt].question //Currently sets the first question from the array, will change later
     let answers = miniTriviaArray[questionAt].answers //make the answers from the question into an object
 
@@ -170,9 +159,4 @@ function setTheButtons(buttons){
             }
         })
     })
-
 }
-
-
-//Bonus if more than 100 questions are in the database
-//time attack - get 5 more/less seconds if answered correctly

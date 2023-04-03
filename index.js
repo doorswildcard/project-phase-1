@@ -160,3 +160,16 @@ function setTheButtons(buttons){
         })
     })
 }
+
+// form submission
+// Question
+// img url
+// 4 answer choices, 1 right 3 wrong
+// submit (post req)
+
+// final page
+// list out the questions
+// have a remove button next to it
+// have to have minimum 10 questions
+// delete req
+// go back to main page

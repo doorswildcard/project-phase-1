@@ -594,10 +594,10 @@
                         "question": "Which state in the United States has the most turkeys?",
                         "image": "https://media.tenor.com/bZhIy09S_5sAAAAM/turkey-gun.gif",
                          "answers": {
-                            "first": "",
-                            "second": "",
-                            "third": "",
-                            "fourth": "",
+                            "first": "Florida",
+                            "second": "Minnesota",
+                            "third": "Utah",
+                            "fourth": "Texas",
                             "correct": "Minnesota"
                         }
                     }
@@ -609,10 +609,10 @@
                     "question": "Which country started the tradition of putting up a Christmas tree?",
                     "image": "https://cdn.sanity.io/images/bs9rmafh/main/443b3e68c46c83b24af1c4d30c8c878189041d10-4500x3000.jpg?w=1600&h=1067&fit=crop",
                      "answers": {
-                        "first": "",
-                        "second": "",
-                        "third": "",
-                        "fourth": "",
+                        "first": "Spain",
+                        "second": "Poland",
+                        "third": "United Kingdom",
+                        "fourth": "Germany",
                         "correct": "Germany"
                     }
                 }

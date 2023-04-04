@@ -559,6 +559,147 @@
                         "correct": "Lasagna"
                     }
                 }
+            },
+            {
+                "question41": {
+                    "id": 41,
+                    "question": "How many points did Michael Jordan score on his first NBA game?",
+                    "image": "https://media.tenor.com/N24FYp75GKgAAAAC/michael-jordan-stop-it.gif",
+                     "answers": {
+                        "first": "24",
+                        "second": "16",
+                        "third": "20",
+                        "fourth": "18",
+                        "correct": "16"
+                    }
+                }
+            },
+            {
+                "question42": {
+                    "id": 42,
+                    "question": "What is Earth's largest continent?",
+                    "image": "https://images.theconversation.com/files/378097/original/file-20210111-23-bqsfwl.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop",
+                     "answers": {
+                        "first": "Europe",
+                        "second": "Antarctica",
+                        "third": "Asia",
+                        "fourth": "Africa",
+                        "correct": "Asia"
+                    }
+                }
+            },
+            {
+                    "question43": {
+                        "id": 43,
+                        "question": "Which state in the United States has the most turkeys?",
+                        "image": "https://media.tenor.com/bZhIy09S_5sAAAAM/turkey-gun.gif",
+                         "answers": {
+                            "first": "",
+                            "second": "",
+                            "third": "",
+                            "fourth": "",
+                            "correct": "Minnesota"
+                        }
+                    }
+
+            },
+            {
+                "question44": {
+                    "id": 44,
+                    "question": "Which country started the tradition of putting up a Christmas tree?",
+                    "image": "https://cdn.sanity.io/images/bs9rmafh/main/443b3e68c46c83b24af1c4d30c8c878189041d10-4500x3000.jpg?w=1600&h=1067&fit=crop",
+                     "answers": {
+                        "first": "",
+                        "second": "",
+                        "third": "",
+                        "fourth": "",
+                        "correct": "Germany"
+                    }
+                }
+            },
+            {
+                "question45": {
+                    "id": 45,
+                    "question": "Which John Wick movie references executive order #11111",
+                    "image": "https://ychef.files.bbci.co.uk/976x549/p0f8jblh.jpg",
+                     "answers": {
+                        "first": "John Wick",
+                        "second": "John Wick: Chapter 2",
+                        "third": "John Wick: Chapter 3",
+                        "fourth": "John Wick: Chapter 4",
+                        "correct": "John Wick: Chapter 2"
+                    }
+                }
+            },
+            {
+                "question46": {
+                    "id": 46,
+                    "question": "How many legs does a lobster have ?",
+                    "image": "https://i.ytimg.com/vi/ywthKNqI7uI/maxresdefault.jpg",
+                     "answers": {
+                        "first": "8",
+                        "second": "12",
+                        "third": "6",
+                        "fourth": "10",
+                        "correct": "10"
+                    }
+                }
+            },
+            {
+                "question47": {
+                    "id": 47,
+                    "question": "What is the largest state in America ?",
+                    "image": "https://www.atlanticcouncil.org/wp-content/uploads/2010/11/usflag-460_1118303c.jpg",
+                     "answers": {
+                        "first": "Florida",
+                        "second": "California",
+                        "third": "Alaska",
+                        "fourth": "Texas",
+                        "correct": "Alaska"
+                    }
+                }
+            },
+            {
+                "question48": {
+                    "id": 48,
+                    "question": "Who was the first Disney princess?",
+                    "image": "https://d.newsweek.com/en/full/1823582/official-disney-princesses.jpg",
+                     "answers": {
+                        "first": "Rapunzel",
+                        "second": "Snow White",
+                        "third": "Cinderella",
+                        "fourth": "Tiana",
+                        "correct": "Snow White"
+                    }
+                }
+            },
+            {
+                "question49": {
+                    "id": 49,
+                    "question": "Which regional pokemon champion is the champion of Hoenn ?",
+                    "image": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/02/featured-12.jpg",
+                     "answers": {
+                        "first": "Steven",
+                        "second": "Cynthia",
+                        "third": "Blue",
+                        "fourth": "Diantha",
+                        "correct": "Steven"
+                    }
+                }
+            },
+            {
+                "question50": {
+                    "id": 50,
+                    "question": "Where is Rick Astley from ?",
+                    "image": "https://j.gifs.com/rRkznp.gif",
+                     "answers": {
+                        "first": "America",
+                        "second": "Australia",
+                        "third": "Canada",
+                        "fourth": "United Kingdom",
+                        "correct": "United Kingdom"
+                    }
+                }
             }
         ]
     }

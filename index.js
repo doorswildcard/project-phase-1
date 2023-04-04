@@ -25,10 +25,6 @@ let questionAt = 0;     //where in the trivia are you
             originalTriviaArray.push(Object.values(questionObject)[0])
         })
       }).finally(console.log('succesfully loaded'))
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 console.log(originalTriviaArray)
 
 button.addEventListener('click', () =>

@@ -25,7 +25,10 @@ let questionAt = 0;     //where in the trivia are you
             originalTriviaArray.push(Object.values(questionObject)[0])
         })
       }).finally(console.log('succesfully loaded'))
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 console.log(originalTriviaArray)
 
 button.addEventListener('click', () =>
@@ -134,7 +137,6 @@ function setTheQuestion(){ //This is a lot to digest so take it slow.
     questionImage.height = 600  //sets image height to 600**
     questionContainer.textContent = originalTriviaArray[miniTriviaArray[questionAt]].question //Currently sets the first question from the array, will change later
     let answers = originalTriviaArray[miniTriviaArray[questionAt]].answers //make the answers from the question into an object
-
     Object.keys(answers).forEach((key, aIndex) => { //get the answer object and loop through it and give it the key and index as the parameter
         buttonArray.forEach(function(button){   //looping through the buttons
             if(button.id.slice(1) == aIndex+1){ //if the second character of the button is equal to answerIndex +1

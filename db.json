@@ -1,131 +1,565 @@
-{
-    "trivia": [{
-        "question1" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-
-        "question2": [{
-            "id":2,
-            "question": "Who's the founder of Nike?",
-            "answers": {
-                "firstA": "Elon Musk",
-                "secondA": "Jeff Bezos",
-                "thirdA": "Tyrone from the Block",
-                "fourthA": "Phil Knight"
+    {
+        "trivia": [
+            {
+                "question1": {
+                    "id": 1,
+                    "question": "Who is the founder of Nike?",
+                    "image": "https://1000logos.net/wp-content/uploads/2021/11/Nike-Logo.png",
+                    "answers": {
+                        "first": "Tyrone Davis",
+                        "second": "Phil Knight",
+                        "third": "LeBron James",
+                        "fourth": "Jeff Bezos",
+                        "correct": "Phil Knight"
+                    }
+                }
+            },
+            {
+                "question2": {
+                    "id": 2,
+                    "question": "Which president read a video game ad that said ; \"Kill your friends, Guilt Free\"",
+                    "image": "https://pbs.twimg.com/media/FYcAae3XoAcfCVQ?format=jpg&name=large",
+                    "answers": {
+                        "first": "OOOOOBAMA",
+                        "second": "Sleepy Joe",
+                        "third": "McDonald Trump",
+                        "fourth": "Hill Bill-y Clinton",
+                        "correct": "Hill Bill-y Clinton"
+                    }
+                }
+            },
+            {
+                "question3": {
+                    "id": 3,
+                    "question": "What's the highest number an IP address can go ?",
+                    "image": "http://sun9-9.userapi.com/impf/c855416/v855416252/13c123/-2ke2fFuMTs.jpg?size=604x602&quality=96&sign=53b1440461e505eb22f49ab319734697&type=album",
+                    "answers": {
+                        "first": "255",
+                        "second": "254",
+                        "third": "256",
+                        "fourth": "245",
+                        "correct": "255"
+                    }
+                }
+            },
+            {
+                "question4": {
+                    "id": 4,
+                    "question": "How many pokemon were in the first generation ?",
+                    "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F12%2F16%2FPokemon-121622-1.jpg&q=60",
+                    "answers": {
+                        "first": "148",
+                        "second": "149",
+                        "third": "150",
+                        "fourth": "151",
+                        "correct": "151"
+                    }
+                }
+            },
+            {
+                "question5": {
+                    "id": 5,
+                    "question": "What month was Julius Caesar stabbed in ?",
+                    "image": "https://cdn.britannica.com/17/193717-050-030D75E3/Julius-Caesar-statue-Rome-Italy.jpg",
+                    "answers": {
+                        "first": "March",
+                        "second": "December",
+                        "third": "June",
+                        "fourth": "September",
+                        "correct": "March"
+                    }
+                }
+            },
+            {
+                "question6": {
+                    "id": 6,
+                    "question": "How many time zones are in Russia?",
+                    "image": "https://cdn.mos.cms.futurecdn.net/9meMCxtJU3NWkh5YcPs7qG.jpg",
+                    "answers": {
+                        "first": "4",
+                        "second": "1",
+                        "third": "11",
+                        "fourth": "6",
+                        "correct": "11"
+                    }
+                }
+            },
+            {
+                "question7": {
+                    "id": 7,
+                    "question": "How long is an Olympic swimming pool in meters ?",
+                    "image": "https://phinizycenter.org/wp-content/uploads/2016/08/8116040042_b10d9ab8c7_o.jpg",
+                    "answers": {
+                        "first": "45",
+                        "second": "40",
+                        "third": "75",
+                        "fourth": "50",
+                        "correct": "50"
+                    }
+                }
+            },
+            {
+                "question8": {
+                    "id": 8,
+                    "question": "How many wisdom teeth does the average adult have ?",
+                    "image": "https://brobible.com/wp-content/uploads/2019/11/istock-153696622.jpg?w=1083",
+                    "answers": {
+                        "first": "1",
+                        "second": "2",
+                        "third": "3",
+                        "fourth": "4",
+                        "correct": "4"
+                    }
+                }
+            },
+            {
+                "question9": {
+                    "id": 9,
+                    "question": "In Georgia, it’s illegal to eat what with a fork?",
+                    "image": "https://cdn.britannica.com/46/195746-050-A553D4A9/Georgia-united-states-locator-map.jpg",
+                    "answers": {
+                        "first": "Pizza",
+                        "second": "Fried Chicken",
+                        "third": "Sandwiches",
+                        "fourth": "Tacos",
+                        "correct": "Fried Chicken"
+                    }
+                }
+            },
+            {
+                "question10": {
+                    "id": 10,
+                    "question": "What was Marilyn Monroe’s natural hair color?",
+                    "image": "https://m.media-amazon.com/images/M/MV5BMzFjMDQzNTktZGQ4NC00ZTNiLThmMTItODRhYzNlNmJiZjM0XkEyXkFqcGdeQXVyMzQ3Nzk5MTU@._V1_.jpg",
+                    "answers": {
+                        "first": "Red",
+                        "second": "Brown",
+                        "third": "Blonde",
+                        "fourth": "Black",
+                        "correct": "Red"
+                    }
+                }
+            },
+            {
+                "question11": {
+                    "id": 11,
+                    "question": "Who is on the 50 dollar bill ?",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGx3twSYBW5ZGRUsCYd3nPhckreCxhApLfpQ&usqp=CAU",
+                    "answers": {
+                        "first": "Franklin",
+                        "second": "Hamilton",
+                        "third": "Washington",
+                        "fourth": "Grant",
+                        "correct": "Grant"
+                    }
+                }
+            },
+            {
+                "question12": {
+                    "id": 12,
+                    "question": "In June in Wyoming, it is illegal to take a picture of what?",
+                    "image": "https://media.tenor.com/QA6mPKs100UAAAAM/caught-in.gif",
+                    "answers": {
+                        "first": "Rabbits",
+                        "second": "Ducks",
+                        "third": "Deers",
+                        "fourth": "Foxes",
+                        "correct": "Rabbits"
+                    }
+                }
+            },
+            {
+                "question13": {
+                    "id": 13,
+                    "question": "According to Russian law, a homeless person must be where after 10 pm?",
+                    "image": "https://i0.wp.com/www.russia-briefing.com/news/wp-content/uploads/2022/05/Russian-laws-.jpg?fit=900%2C506&ssl=1",
+                    "answers": {
+                        "first": "Homeless Shelter",
+                        "second": "Home",
+                        "third": "Police Station",
+                        "fourth": "In your walls",
+                        "correct": "Home"
+                    }
+                }
+            },
+            {
+                "question14": {
+                    "id": 14,
+                    "question": "On Sunday, what is illegal to sell in Columbus, Ohio?",
+                    "image": "http://pkbnews.in/wp-content/uploads/2023/03/Ohio-Meme5.jpg.webp",
+                    "answers": {
+                        "first": "Mushrooms",
+                        "second": "Toothpaste",
+                        "third": "Cornflakes",
+                        "fourth": "Pepsi",
+                        "correct": "Cornflakes"
+                    }
+                }
+            },
+            {
+                "question15": {
+                    "id": 15,
+                    "question": "What ailment kills the most fruit flies?",
+                    "image": "https://i.imgflip.com/202y84.jpg?a466656",
+                    "answers": {
+                        "first": "Sneezes",
+                        "second": "Coughs",
+                        "third": "Constipation",
+                        "fourth": "Pink Eyes",
+                        "correct": "Constipation"
+                    }
+                }
+            },
+            {
+                "question16": {
+                    "id": 16,
+                    "question": "What was the first fruit that was eaten on the moon?",
+                    "image": "https://imageio.forbes.com/specials-images/imageserve/637925f8fb68cde7521a9f14/0x0.jpg?format=jpg&crop=3594,2022,x0,y374,safe&width=1200",
+                    "answers": {
+                        "first": "Peach",
+                        "second": "Orange",
+                        "third": "Banana",
+                        "fourth": "Strawberry",
+                        "correct": "Peach"
+                    }
+                }
+            },
+            {
+                "question17": {
+                    "id": 17,
+                    "question": "Where was the world’s first speeding ticket issued?",
+                    "image": "https://www.bakersfieldtraffictickets.com/images/blogs/Disputing-a-Speeding-Ticket-Is-it-Worth-It.jpg",
+                    "answers": {
+                        "first": "England",
+                        "second": "America",
+                        "third": "Canada",
+                        "fourth": "Mexico",
+                        "correct": "England"
+                    }
+                }
+            },
+            {
+                "question18": {
+                    "id": 18,
+                    "question": "What color are airplane \"black\" boxes ?",
+                    "image": "https://images.unsplash.com/photo-1559268950-2d7ceb2efa3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80",
+                    "answers": {
+                        "first": "Black",
+                        "second": "Yellow",
+                        "third": "Orange",
+                        "fourth": "Red",
+                        "correct": "Orange"
+                    }
+                }
+            },
+            {
+                "question19": {
+                    "id": 19,
+                    "question": "What was Bugs Bunny original name ?",
+                    "image": "https://www.icegif.com/wp-content/uploads/icegif-5636.gif",
+                    "answers": {
+                        "first": "Sly Rabbit",
+                        "second": "Tall Rabbit",
+                        "third": "Chungus Rabbit",
+                        "fourth": "Happy Rabbit",
+                        "correct": "Happy Rabbit"
+                    }
+                }
+            },
+            {
+                "question20": {
+                    "id": 20,
+                    "question": "How many planets are in our solar system ?",
+                    "image": "https://cdn.mos.cms.futurecdn.net/DQyNHder4hmYdLZ4Wf5oS3-1200-80.jpg",
+                    "answers": {
+                        "first": "Eight",
+                        "second": "Ten",
+                        "third": "Nine",
+                        "fourth": "Eleven",
+                        "correct": "Eight"
+                    }
+                }
+            },
+            {
+                "question21": {
+                    "id": 21,
+                    "question": "What year was Flatiron School founded ?",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/FS_wiki.png",
+                    "answers": {
+                        "first": "2012",
+                        "second": "2010",
+                        "third": "2011",
+                        "fourth": "2013",
+                        "correct": "2012"
+                    }
+                }
+            },
+            {
+                "question22": {
+                    "id": 22,
+                    "question": "How many months have 28 days in them ?",
+                    "image": "https://www.nicepng.com/png/full/419-4194972_image-of-calendar-with-flipped-page-calendar.png",
+                    "answers": {
+                        "first": "1",
+                        "second": "4",
+                        "third": "9",
+                        "fourth": "12",
+                        "correct": "12"
+                    }
+                }
+            },
+            {
+                "question23": {
+                    "id": 23,
+                    "question": "From which country do French fries originate?",
+                    "image": "https://images.themodernproper.com/billowy-turkey/production/posts/2022/Homemade-French-Fries_8.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1662474181&s=f6b09b96f732330eca2aae43140b3ffa",
+                    "answers": {
+                        "first": "America",
+                        "second": "Belgium",
+                        "third": "England",
+                        "fourth": "Scotland",
+                        "correct": "Belgium"
+                    }
+                }
+            },
+            {
+                "question24": {
+                    "id": 24,
+                    "question": "What was the name of the Greek God of Death ?",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Jupiter_Smyrna_Louvre_Ma13.jpg",
+                    "answers": {
+                        "first": "Nyx",
+                        "second": "Hypnos",
+                        "third": "Thanatos",
+                        "fourth": "Erebus",
+                        "correct": "Thanatos"
+                    }
+                }
+            },
+            {
+                "question25": {
+                    "id": 25,
+                    "question": "What with no brim ?",
+                    "image": "https://i.imgflip.com/5doci4.gif",
+                    "answers": {
+                        "first": "Yankee",
+                        "second": "Mets",
+                        "third": "Knicks",
+                        "fourth": "Hat",
+                        "correct": "Yankee"
+                    }
+                }
+            },
+            {
+                "question26": {
+                    "id": 26,
+                    "question": "What is the Backstreet Boys biggest hit?",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Backstreet_Boys_2019_by_Glenn_Francis.jpg",
+                    "answers": {
+                        "first": "I Want It That Way",
+                        "second": "Shape Of My Heart",
+                        "third": "Quit Playing Games",
+                        "fourth": "Incomplete",
+                        "correct": "Shape Of My Heart"
+                    }
+                }
+            },
+            {
+                "question27": {
+                    "id": 27,
+                    "question": "What's the longest river in the world ?",
+                    "image": "https://img.traveltriangle.com/blog/wp-content/uploads/2018/11/Rivers-of-the-World-Cover.jpg",
+                    "answers": {
+                        "first": "Mississippi",
+                        "second": "Amazon",
+                        "third": "Nile",
+                        "fourth": "Ganges",
+                        "correct": "Nile"
+                    }
+                }
+            },
+            {
+                "question28": {
+                    "id": 28,
+                    "question": "In what year was the first iPhone released ?",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/800px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg",
+                    "answers": {
+                        "first": "2007",
+                        "second": "2006",
+                        "third": "2005",
+                        "fourth": "2008",
+                        "correct": "2007"
+                    }
+                }
+            },
+            {
+                "question29": {
+                    "id": 29,
+                    "question": "Which city is Eminem from?",
+                    "image": "https://media.npr.org/assets/music/news/2010/06/eminem-52893634f7c035450a7b5ff2e040cacb4012395e-s1100-c50.jpg",
+                    "answers": {
+                        "first": "New York City",
+                        "second": "Detroit",
+                        "third": "San Francisco",
+                        "fourth": "Las Vegas",
+                        "correct": "Detroit"
+                    }
+                }
+            },
+            {
+                "question30": {
+                    "id": 30,
+                    "question": "Which NYC borough is the most populated ?",
+                    "image": "https://imgcap.capturetheatlas.com/wp-content/uploads/2022/12/boroughs-of-new-york-city-map.jpg",
+                    "answers": {
+                        "first": "Manhattan",
+                        "second": "Queens",
+                        "third": "Bronx",
+                        "fourth": "Brooklyn",
+                        "correct": "Brooklyn"
+                    }
+                }
+            },
+            {
+                "question31": {
+                    "id": 31,
+                    "question": "What was Elvis Presley's middle name?",
+                    "image": "https://cdn.britannica.com/85/202285-050-EF215325/Elvis-Presley-Girl-Happy-Boris-Sagal.jpg",
+                    "answers": {
+                        "first": "Michael",
+                        "second": "Fred",
+                        "third": "Aaron",
+                        "fourth": "Jason",
+                        "correct": "Aaron"
+                    }
+                }
+            },
+            {
+                "question32": {
+                    "id": 32,
+                    "question": "Who was the lead singer of the band Queen?",
+                    "image": "https://www.udiscovermusic.com/wp-content/uploads/2020/10/Queen-GettyImages-84884224-1000x600.jpg",
+                    "answers": {
+                        "first": "Freddie Mercury",
+                        "second": "Brian May",
+                        "third": "Roger Taylor",
+                        "fourth": "Mike Grose",
+                        "correct": "Freddie Mercury"
+                    }
+                }
+            },
+            {
+                "question33": {
+                    "id": 33,
+                    "question": "Which song earned Drake his first Grammy Award?",
+                    "image": "https://i.imgflip.com/5pusl7.jpg",
+                    "answers": {
+                        "first": "God's Plan",
+                        "second": "Hotline Bling",
+                        "third": "One Dance",
+                        "fourth": "Passionfruit",
+                        "correct": "Hotline Bling"
+                    }
+                }
+            },
+            {
+                "question34": {
+                    "id": 34,
+                    "question": "Which method is used to add a new element to an array in JavaScript?",
+                    "image": "https://www.thoughtco.com/thmb/094YF3bQBiuV_13n92GFQZWkM7k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/JavaScript-58acbb8a3df78c345bad32c2.jpg",
+                    "answers": {
+                        "first": "add()",
+                        "second": "shift()",
+                        "third": "append()",
+                        "fourth": "push()",
+                        "correct": "push()"
+                    }
+                }
+            },
+            {
+                "question35": {
+                    "id": 35,
+                    "question": "How many cards are in a NORMAL UNO deck ?",
+                    "image": "https://i.kym-cdn.com/entries/icons/original/000/032/373/tempsnip.png",
+                    "answers": {
+                        "first": "104",
+                        "second": "116",
+                        "third": "108",
+                        "fourth": "112",
+                        "correct": "108"
+                    }
+                }
+            },
+            {
+                "question36": {
+                    "id": 36,
+                    "question": "What are the names of Mohammed's cats ?",
+                    "image": "",
+                     "answers": {
+                        "first": "Kiwi",
+                        "second": "Orange",
+                        "third": "Garfield",
+                        "fourth": "Odin",
+                        "correct": "Kiwi"
+                    }
+                }
+            },
+            {
+                "question37": {
+                    "id": 37,
+                    "question": "What sport did John Cena play in college ?",
+                    "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/797/816/d51.gifv",
+                     "answers": {
+                        "first": "Basketball",
+                        "second": "Football",
+                        "third": "Hockey",
+                        "fourth": "Golf",
+                        "correct": "Football"
+                    }
+                }
+            },
+            {
+                "question38": {
+                    "id": 38,
+                    "question": "When did Club Penguin shut down ?",
+                    "image": "https://media.tenor.com/iWHmxL5_ltAAAAAd/club-penguin-dance.gif",
+                     "answers": {
+                        "first": "2015",
+                        "second": "2016",
+                        "third": "2014",
+                        "fourth": "2017",
+                        "correct": "2017"
+                    }
+                }
+            },
+            {
+                "question39": {
+                    "id": 39,
+                    "question": "Where did Tacos originate from ?",
+                    "image": "https://qph.cf2.quoracdn.net/main-qimg-f091c7d5125140bf5a9e394779d313cc.webp",
+                     "answers": {
+                        "first": "Argentina",
+                        "second": "Mexico",
+                        "third": "Spain",
+                        "fourth": "Texas",
+                        "correct": "Mexico"
+                    }
+                }
+            },
+            {
+                "question40": {
+                    "id": 40,
+                    "question": "What is Garfield's favorite food?",
+                    "image": "https://48hills.org/wp-content/uploads/2021/03/Buff-Garfield-696x440.jpg",
+                     "answers": {
+                        "first": "Sandwich",
+                        "second": "Pizza",
+                        "third": "Lasagna",
+                        "fourth": "Spaghetti",
+                        "correct": "Lasagna"
+                    }
+                }
             }
-        }],
-        "question3" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question4" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question5" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question6" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question7" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question8" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question9" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question10" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }],
-        "question11" : [{
-            "id":1,
-            "question": "Are you racist ?",
-            "answers": {
-            "firstA": "Yes",
-            "secondA": "Yes",
-            "thirdA": "Yes",
-            "fourthA": "Yes",
-            "correct": ""
-        }
-        }]
 
-
-
-
-
-
-    }]
-}
+        ]
+    }

@@ -493,8 +493,8 @@
             {
                 "question36": {
                     "id": 36,
-                    "question": "What are the names of Mohammed's cats ?",
-                    "image": "",
+                    "question": "What are the names of one of Mohammad's cats ?",
+                    "image": "./images/catphoto.jpg",
                      "answers": {
                         "first": "Kiwi",
                         "second": "Orange",

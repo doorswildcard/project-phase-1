@@ -5,13 +5,13 @@ html{
     from {
         background-color: whitesmoke;
     } to {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(77, 17, 110);
     }
 }
 #initial-page{
     font-size: x-large;
     background-clip: inherit;
-    background: linear-gradient(to right, #64a0f5, rgb(69, 214, 202));
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -29,23 +29,19 @@ html{
     top: 0%;
     left: 25%;
 }
-#answers{
+#answerbuttons{
     position: absolute;
     width: auto;
     height: auto;
     top: 40%;
     left: 40%;
     display: block;
-
-}
-.restartBtn {
-    position: center;
 }
 img{
     position: absolute;
     text-align: center;
     width: 500px;
-    height: 50%;
+    height: auto;
     top: 20%;
     left: 35%;
     display: block;
@@ -53,7 +49,7 @@ img{
 #results-page{
     font-size: x-large;
     background-clip: inherit;
-    background: linear-gradient(to right, rgb(67, 198, 205), rgb(198, 255, 12));
+    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;

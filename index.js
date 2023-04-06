@@ -7,12 +7,11 @@ let controls = document.querySelector(".controls")
 let button = document.querySelector("#start")
 let questionImage = document.querySelector("#question-image")
 let restartButton = document.querySelector("#restart")
-
+let resultsList = document.querySelector("#results-list")
 
 const apiUrl = 'http://localhost:3000/trivia'
 let originalTriviaArray = []
 let miniTriviaArray = []
-let resultArray = []
 let triviaMode = 1          //Choose between next question on answer click or show answer wrong then next question
 let freshOrNot = false      //check for some reason
 let buttonArray = Array.from(answerbuttons.children) //make the children of the answerbuttons into an array
@@ -26,8 +25,7 @@ let questionAt = 0;     //where in the trivia are you
         data.forEach(function(questionObject){
             originalTriviaArray.push(Object.values(questionObject)[0])
         })
-      }).finally(console.log('succesfully loaded'))
-console.log(originalTriviaArray)
+      }).finally(console.log('succesfully loaded'),console.log(originalTriviaArray))
 
 button.addEventListener('click', () =>
 startTriviaState()
@@ -36,9 +34,7 @@ restartButton.addEventListener('click', () => {
     startTriviaState()
     console.log("HELLO")
 })
-
 loadInState()
-
 //change correct answer to green in trivia mode 2
 
 function loadInState(){                 //when the page loads in
@@ -51,6 +47,7 @@ function loadInState(){                 //when the page loads in
     questionImage.style.display = 'none'
     button.style.display = 'block'
     initpage.style.display = 'block'
+    resultsList.style.display = 'none'
     setTheButtons(buttonArray) //one time thing is better
 }
 
@@ -62,9 +59,9 @@ function startTriviaState(){            //starts the trivia hides necessary elem
     answerbuttons.style.display = 'block'
     restartButton.style.display = 'none'
     resultsPage.style.display = 'none'
-    resultList
-
+    resultsList.style.display = 'none'
     randomizeArray()    //randomize array
+
     if(miniTriviaArray.length != 0 && questionAt == miniTriviaArray.length){returnToZero()} //enables trivia repition by setting both values to 0
     setTheQuestion()    //sets up questions
 }
@@ -72,17 +69,18 @@ function startTriviaState(){            //starts the trivia hides necessary elem
 function returnToZero(){    //resets player stats to 0 so trivia can loop again
     questionAt = 0;
     playerScore = 0
-    resultArray = []
+
 }
 function resultsState(){                //when you finish the trivia
     initpage.style.display = 'none'         //none = go invisible
     questionContainer.style.display = 'none'    //block = appear
     answerDiv.style.display = 'none'
     answerbuttons.style.display = 'none'
-    resultsPage.style.display = 'block'
-    restartButton.style.display = 'block'
     questionImage.src = ''
     questionImage.style.display = 'none'
+    resultsList.style.display = 'block'
+    restartButton.style.display = 'block'
+    resultsPage.style.display = 'block'
     let result = () => {
         if(playerScore < miniTriviaArray.length * .2){
             return `${playerScore}/${miniTriviaArray.length} Why are you even taking this trivia ?🤨`
@@ -94,7 +92,6 @@ function resultsState(){                //when you finish the trivia
             return `${playerScore}/${miniTriviaArray.length} Why are you wasting you're time on this trivia, smartie?🤨`
         }
     }           // insults for how well you did
-    console.log(resultArray)
     resultsPage.textContent = result()  // insults u again???
 }
 
@@ -160,11 +157,11 @@ function setTheButtons(buttons){    //Just do this function once and watch it wo
             if(button.textContent == originalTriviaArray[miniTriviaArray[questionAt]].answers['correct']){ //checking if the right answer
                 playerScore++;
                 console.log("Correct Answer, Here's a cookie")
-                resultArray.push(`${questionAt+1} : Correct`)
+
                 return setTheQuestion(questionAt++)
             } else if (button.textContent != originalTriviaArray[miniTriviaArray[questionAt]].answers['correct']){ //checking if the wrong answer
                 console.log("Wrong answer, punishment: The Gas Chambers...")
-                resultArray.push(`${questionAt+1} : Wrong`)
+
                return  setTheQuestion(questionAt++)
             }
         })

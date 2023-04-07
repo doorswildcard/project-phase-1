@@ -79,9 +79,9 @@ function resultsState(){
     resultsPage.style.display = 'block'
     }
     let result = () => {
-        if(playerScore < miniTriviaArray.length * .2){
+        if(playerScore <= miniTriviaArray.length * .2){
             return `${playerScore}/${miniTriviaArray.length} Stop it. Get some help -Michael Jordan`
-        } else if (playerScore => miniTriviaArray.length * .3 && playerScore <= miniTriviaArray.length * .5) {
+        } else if (playerScore > miniTriviaArray.length * .3 && playerScore <= miniTriviaArray.length * .5) {
             return `${playerScore}/${miniTriviaArray.length} Execution was bad but the effort was there`
         } else if (playerScore => miniTriviaArray.length * .6 && playerScore <= miniTriviaArray.length * .9) {
             return `${playerScore}/${miniTriviaArray.length} MID`

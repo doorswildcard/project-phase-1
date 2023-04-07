@@ -437,7 +437,7 @@
             {
                 "question32": {
                     "id": 32,
-                    "question": "Who was the lead singer of the band Queen?",
+                    "question": "Who was the lead singer of Queen?",
                     "image": "https://www.udiscovermusic.com/wp-content/uploads/2020/10/Queen-GettyImages-84884224-1000x600.jpg",
                     "answers": {
                         "first": "Freddie Mercury",

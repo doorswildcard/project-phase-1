@@ -32,10 +32,12 @@ html{
     position: absolute;
     width: auto;
     height: auto;
-    top: 60%;
-    left: 40%;
+    top: 20%;
+    left: 20%;
     display: block;
-
+    font-size: x-large;
+    border: 2mm;
+    border-color: black;
 }
 img{
     position: absolute;
@@ -43,7 +45,7 @@ img{
     width: 350px;
     height: auto;
     top: 20%;
-    left: 35%;
+    left: 45%;
     display: block;
 }
 #results-page{
@@ -63,5 +65,5 @@ img{
     font-size: 64px;
     color: antiquewhite;
     text-align: center;
-    
+
 }

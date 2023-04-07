@@ -80,13 +80,13 @@ function resultsState(){
     }
     let result = () => {
         if(playerScore < miniTriviaArray.length * .2){
-            return `${playerScore}/${miniTriviaArray.length} Why are you even taking this trivia ?🤨`
+            return `${playerScore}/${miniTriviaArray.length} Stop it. Get some help -Michael Jordan`
         } else if (playerScore > miniTriviaArray.length * .2 && playerScore <= miniTriviaArray.length * .5) {
-            return `${playerScore}/${miniTriviaArray.length} You're dumb but at least you're not stupid ?`
+            return `${playerScore}/${miniTriviaArray.length} Execution was bad but the effort was there`
         } else if (playerScore > miniTriviaArray.length * .6 && playerScore <= miniTriviaArray.length * .9) {
-            return `${playerScore}/${miniTriviaArray.length} Good job.. I guess ?`
+            return `${playerScore}/${miniTriviaArray.length} MID`
         } else if (playerScore == miniTriviaArray.length * 1) {
-            return `${playerScore}/${miniTriviaArray.length} Why are you wasting you're time on this trivia, smartie?🤨`
+            return `${playerScore}/${miniTriviaArray.length} Too cool for school`
         }
     }           // insults for how well you did
 
@@ -130,8 +130,8 @@ function shuffle(ShuffleThis){
 function setTheQuestion(){ //This is a lot to digest so take it slow.
     if(miniTriviaArray != [] && questionAt == miniTriviaArray.length){return resultsState()} else { } //if at the last index go to results
     questionImage.src = originalTriviaArray[miniTriviaArray[questionAt]].image
-    questionImage.width = 800   //sets image width to 800**
-    questionImage.height = 600  //sets image height to 600**
+    // questionImage.width = 800   //sets image width to 800**
+    // questionImage.height = 600  //sets image height to 600**
     questionActually.textContent = originalTriviaArray[miniTriviaArray[questionAt]].question //Currently sets the first question from the array, will change later
     let answers = originalTriviaArray[miniTriviaArray[questionAt]].answers //make the answers from the question into an object
     Object.keys(answers).forEach((key, aIndex) => { //get the answer object and loop through it and give it the key and index as the parameter
@@ -155,11 +155,11 @@ function setTheButtons(buttons){    //Just do this function once and watch it wo
         answerButton.addEventListener('click', function test() {
             if(answerButton.textContent == originalTriviaArray[miniTriviaArray[questionAt]].answers['correct']){ //checking if the right answer
                 playerScore++;
-                console.log("Correct Answer, Here's a cookie")
+                console.log("Correct Answer")
 
                 return setTheQuestion(questionAt++)
             } else if (answerButton.textContent != originalTriviaArray[miniTriviaArray[questionAt]].answers['correct']){ //checking if the wrong answer
-                console.log("Wrong answer, punishment: The Gas Chambers...")
+                console.log("Wrong answer")
 
                return  setTheQuestion(questionAt++)
             }

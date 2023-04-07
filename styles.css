@@ -1,17 +1,17 @@
 html{
-    animation: fade-in 1s forwards;
+    animation: fade-in 2s forwards;
 }
 @keyframes fade-in {
     from {
-        background-color: whitesmoke;
+        background-color: rgb(0, 0, 0);
     } to {
-        background-color: rgb(77, 17, 110);
+        background-color: rgb(109, 101, 195);
     }
 }
 #initial-page{
-    font-size: x-large;
+    font-size: 64px;
     background-clip: inherit;
-    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
+    background: linear-gradient(to right, rgb(159, 67, 205), rgb(103, 29, 145));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -19,8 +19,7 @@ html{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 200px;
-    border: 2px solid red;
+    height: 400px;
 }
 #question-container{
     font-size: xx-large;
@@ -33,21 +32,22 @@ html{
     position: absolute;
     width: auto;
     height: auto;
-    top: 40%;
+    top: 60%;
     left: 40%;
     display: block;
+
 }
 img{
     position: absolute;
     text-align: center;
-    width: 500px;
+    width: 350px;
     height: auto;
     top: 20%;
     left: 35%;
     display: block;
 }
 #results-page{
-    font-size: x-large;
+    font-size: 64px;
     background-clip: inherit;
     background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
     -webkit-background-clip: text;
@@ -58,5 +58,10 @@ img{
     justify-content: center;
     width: 100%;
     height: 200px;
-    border: 2px solid red;
+}
+#restart{
+    font-size: 64px;
+    color: antiquewhite;
+    text-align: center;
+    
 }
